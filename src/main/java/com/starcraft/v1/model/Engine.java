@@ -1,4 +1,4 @@
-package com.starcraft.v1.engine;
+package com.starcraft.v1.model;
 
 public class Engine {
 	String version;

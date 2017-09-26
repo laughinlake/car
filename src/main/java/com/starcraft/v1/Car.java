@@ -3,11 +3,7 @@
  */
 package com.starcraft.v1;
 
-/**
- * @author clarkjia
- *
- */
-import com.starcraft.v1.engine.Engine;
+import com.starcraft.v1.model.Engine;
 import com.starcraft.v1.struture.*;
 
 public class Car {

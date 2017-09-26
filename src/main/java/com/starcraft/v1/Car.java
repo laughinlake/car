@@ -61,6 +61,14 @@ public class Car {
 		this.name = name;
 	}
 	
+	public void start() {
+		System.out.println("my car start!");
+	}
+	
+	public void stop() {
+		System.out.println("my car stop!");
+	}
+	
     @Override
     public String toString() {
     	// TODO Auto-generated method stub
@@ -80,6 +88,8 @@ public class Car {
 		mycar.setChassis(new Chassis());
 		mycar.setWheels(new Wheel[4]);
 		System.out.println(mycar);
+		mycar.start();
+		mycar.stop();
 	}
 	
 

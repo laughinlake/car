@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.starcraft.v1;
+package com.starcraft.v1.model;
 
-import com.starcraft.v1.model.Engine;
+import com.starcraft.v1.operation.BaseMove;
 import com.starcraft.v1.struture.*;
 
-public class Car {
+public class Car extends BaseMove {
 	private String name;
 	private Engine engine;
 	private Body body;
@@ -74,19 +74,5 @@ public class Car {
     			+ "chassis:" + chassis + "\""
     			+ "wheels:" + wheels;
     }
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		Car mycar = new Car("Star*");
-		mycar.setEngine(new Engine());
-		mycar.setBody(new Body());
-		mycar.setChassis(new Chassis());
-		mycar.setWheels(new Wheel[4]);
-		System.out.println(mycar);
-		mycar.start();
-		mycar.stop();
-	}
-	
 
 }
